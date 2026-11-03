@@ -22,21 +22,30 @@ jobs:
       - name: Install Android SDK
         run: |
           set -euo pipefail
-          sudo apt-get update
-          sudo apt-get install -y wget unzip
-          mkdir -p "$HOME/android-sdk/cmdline-tools"
-          wget -q "https://dl.google.com/android/repository/commandlinetools-linux-13114758_latest.zip" -O /tmp/cmdtools.zip
-          unzip -q /tmp/cmdtools.zip -d /tmp/cmdtools
-          rm -rf "$HOME/android-sdk/cmdline-tools/latest"
-          mv /tmp/cmdtools/cmdline-tools "$HOME/android-sdk/cmdline-tools/latest"
-          echo "ANDROID_HOME=$HOME/android-sdk" >> "$GITHUB_ENV"
-          echo "$HOME/android-sdk/cmdline-tools/latest/bin" >> "$GITHUB_PATH"
-          echo "$HOME/android-sdk/platform-tools" >> "$GITHUB_PATH"
-          yes | "$HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null
-          "$HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager" \
+          # ubuntu-latest already ships the SDK (ANDROID_HOME / ANDROID_SDK_ROOT).
+          # Downloading commandlinetools and piping `yes` into `sdkmanager --licenses`
+          # fails the step: sdkmanager exits, `yes` gets SIGPIPE, and pipefail is on.
+          SDK="${ANDROID_SDK_ROOT:-${ANDROID_HOME:-/usr/local/lib/android/sdk}}"
+          SDKMANAGER="$SDK/cmdline-tools/latest/bin/sdkmanager"
+          if [ ! -x "$SDKMANAGER" ]; then
+            echo "Preinstalled sdkmanager not found at $SDKMANAGER" >&2
+            ls -la "$SDK" >&2 || true
+            exit 1
+          fi
+          echo "Using preinstalled Android SDK at $SDK"
+          echo "ANDROID_HOME=$SDK" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$SDK" >> "$GITHUB_ENV"
+          echo "$SDK/cmdline-tools/latest/bin" >> "$GITHUB_PATH"
+          echo "$SDK/platform-tools" >> "$GITHUB_PATH"
+          # Drop pipefail only for the license prompt. `yes` always dies with SIGPIPE.
+          set +o pipefail
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          set -o pipefail
+          "$SDKMANAGER" --install \
             "platforms;android-37.1" \
-            "build-tools;36.0.0" \
-            "platform-tools"
+            "build-tools;36.0.0"
+          test -d "$SDK/platforms/android-37.1"
+          test -d "$SDK/build-tools/36.0.0"
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v5
