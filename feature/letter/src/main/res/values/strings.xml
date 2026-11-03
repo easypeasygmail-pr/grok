@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="letter_title">Pismo</string>
+    <string name="letter_who">Kto pisze</string>
+    <string name="letter_what">Czego chce</string>
+    <string name="letter_how_much">Ile</string>
+    <string name="letter_until">Do kiedy</string>
+    <string name="letter_file">Znak sprawy</string>
+    <string name="letter_none">Brak</string>
+    <string name="letter_urgency_green">Zielone: termin nie jest bliski. I tak sprawdź datę w cytacie.</string>
+    <string name="letter_urgency_yellow">Żółte: termin jest w najbliższych tygodniach.</string>
+    <string name="letter_urgency_red">Czerwone: sprawa jest pilna albo wymaga poradni.</string>
+    <string name="letter_deadlines">Terminy</string>
+    <string name="letter_quote">Cytat z pisma</string>
+    <string name="letter_confirmed">Potwierdzone</string>
+    <string name="letter_confirm">Potwierdź</string>
+    <string name="letter_correct">Popraw</string>
+    <string name="letter_calendar">Dodaj do kalendarza</string>
+    <string name="letter_reminders">Przypomnienia: 7 dni, 2 dni i w dniu terminu</string>
+    <string name="letter_reminders_done">Ustawiono lokalne przypomnienia.</string>
+    <string name="letter_date_label">Nowa data (RRRR-MM-DD)</string>
+    <string name="letter_save_date">Zapisz datę</string>
+    <string name="letter_bad_date">Data musi być w formacie RRRR-MM-DD.</string>
+    <string name="letter_reply">Napisz odpowiedź</string>
+    <string name="letter_advisor">Idź do poradni</string>
+    <string name="letter_error_title">Nie udało się wczytać pisma</string>
+    <string name="letter_retry">Spróbuj ponownie</string>
+    <string name="letter_missing">Nie ma takiego pisma.</string>
+    <string name="letter_fake_note">Analiza w tej fazie jest lokalną próbką. Sprawdź cytat, zanim zaufasz dacie.</string>
+    <string name="letter_notifications">Włącz powiadomienia, żeby przypomnienia były widoczne.</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Ustawienia</string>
+    <string name="settings_profile">Twoje dane do listu i do maskowania</string>
+    <string name="settings_name">Imię i nazwisko</string>
+    <string name="settings_street">Ulica i numer</string>
+    <string name="settings_postcode">Kod pocztowy</string>
+    <string name="settings_city">Miasto</string>
+    <string name="settings_email">E-mail</string>
+    <string name="settings_phone">Telefon</string>
+    <string name="settings_save_profile">Zapisz profil</string>
+    <string name="settings_saved">Zapisano.</string>
+    <string name="settings_biometric">Blokada biometryczna</string>
+    <string name="settings_biometric_body">Przy kolejnym uruchomieniu aplikacja poprosi o odcisk palca albo blokadę telefonu.</string>
+    <string name="settings_delete">Usuń wszystkie dane</string>
+    <string name="settings_delete_title">Usunąć wszystko?</string>
+    <string name="settings_delete_body">Znikną pisma, profil, zgoda i przypomnienia z tego telefonu. Tego nie cofniesz.</string>
+    <string name="settings_delete_confirm">Usuń</string>
+    <string name="settings_cancel">Anuluj</string>
+    <string name="settings_impressum_title">Impressum</string>
+    <string name="settings_impressum_body">TODO: właściciel wpisuje tu swoje dane prawne (imię i nazwisko albo firma, adres, e-mail). Tego tekstu nie wolno traktować jako gotowego impressum.</string>
+    <string name="settings_privacy_title">Polityka prywatności</string>
+    <string name="settings_privacy_body">TODO: właściciel wstawia tu politykę prywatności. Faza 0 nie wysyła treści pism na serwer. Analiza jest lokalną próbką.</string>
+    <string name="settings_lock_title">Odpisz.de</string>
+    <string name="settings_lock_subtitle">Odblokuj, aby zobaczyć pisma</string>
+    <string name="settings_lock_retry">Spróbuj odblokować</string>
+    <string name="settings_error">Nie udało się zapisać.</string>
+</resources>

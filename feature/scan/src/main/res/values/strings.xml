@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scan_title">Nowe pismo</string>
+    <string name="scan_intro">Wybierz zdjęcie, PDF albo wklej tekst. Skaner dokumentów otwiera ML Kit. Gdy go nie ma, zostają plik i przykłady.</string>
+    <string name="scan_camera">Skanuj dokument</string>
+    <string name="scan_file">Wybierz zdjęcie lub PDF</string>
+    <string name="scan_sample_tax">Przykład: pismo z Finanzamt</string>
+    <string name="scan_sample_court">Przykład: pismo z sądu</string>
+    <string name="scan_paste_label">Albo wklej tekst pisma</string>
+    <string name="scan_paste_action">Użyj wklejonego tekstu</string>
+    <string name="scan_loading">Czytam dokument…</string>
+    <string name="scan_error_title">Nie udało się wczytać</string>
+    <string name="scan_retry">Spróbuj ponownie</string>
+    <string name="scan_scanner_missing">Skaner dokumentów jest niedostępny na tym telefonie. Wybierz plik albo przykład.</string>
+</resources>

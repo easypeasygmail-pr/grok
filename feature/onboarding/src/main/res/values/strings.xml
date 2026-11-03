@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_title">Odpisz.de</string>
+    <string name="onboarding_card_what_title">Co robi ta aplikacja</string>
+    <string name="onboarding_card_what_body">Fotografujesz niemieckie pismo urzędowe. Odpisz.de mówi po polsku, kto pisze, czego chce, ile masz zapłacić i do kiedy, a potem składa niemiecki list z Twoich faktów.</string>
+    <string name="onboarding_card_privacy_title">Prywatność</string>
+    <string name="onboarding_card_privacy_body">Na telefonie maskujemy IBAN, niemiecki identyfikator podatkowy, telefon, e-mail, kod pocztowy oraz Twoje imię i adres. W tej fazie analiza jest offline i korzysta z przykładowych reguł. Na serwer nic nie wychodzi.</string>
+    <string name="onboarding_card_legal_title">To nie jest porada prawna</string>
+    <string name="onboarding_card_legal_body">Aplikacja nie wymyśla argumentów prawnych i nie zastępuje adwokata, doradcy podatkowego ani poradni. Przy sądzie, komorniku, nakazie zapłaty, pobycie i merytorycznym odwołaniu podatkowym zatrzymamy generator odpowiedzi.</string>
+    <string name="onboarding_consent">Zgadzam się, żeby aplikacja przetwarzała na tym telefonie dane szczególnej kategorii z pism (art. 9 RODO), na przykład o zdrowiu, jeśli takie dane w piśmie są. Mogę to cofnąć, usuwając wszystkie dane.</string>
+    <string name="onboarding_next">Dalej</string>
+    <string name="onboarding_back">Wstecz</string>
+    <string name="onboarding_start">Zaczynam</string>
+</resources>
