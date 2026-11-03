@@ -1,0 +1,43 @@
+# Sekrety i pliki maszyny. Nigdy nie commituj kluczy.
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.keystore
+*.jks
+local.properties
+google-services.json
+**/google-services.json
+secrets/
+
+# Android / Gradle — gdy zestaw trafi do repozytorium aplikacji.
+# Gołe `build/` łapałoby też katalog dokumentacji `references/android/build/`
+# w snapshotcie skilli Google, więc katalog z powrotem włączamy.
+.gradle/
+build/
+**/build/
+!third_party/**/build/
+!third_party/**/build/**
+.cxx/
+.externalNativeBuild/
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.hprof
+output-metadata.json
+
+# IDE
+.idea/
+*.iml
+.kotlin/
+
+# Lokalne zrzuty z pętli weryfikacji (skill verify-on-emulator).
+screenshots/
+
+# Logi i system
+*.log
+.DS_Store
+Thumbs.db
