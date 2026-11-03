@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="history_title">Pisma</string>
+    <string name="history_search">Szukaj nadawcy albo tytułu</string>
+    <string name="history_empty_title">Nie ma jeszcze pism</string>
+    <string name="history_empty_body">Zeskanuj niemieckie pismo albo wczytaj przykładowe, żeby zobaczyć, jak działa Odpisz.de.</string>
+    <string name="history_empty_search">Nic nie pasuje do szukanej frazy.</string>
+    <string name="history_error_title">Nie udało się wczytać listy</string>
+    <string name="history_retry">Spróbuj ponownie</string>
+    <string name="history_scan">Skanuj</string>
+    <string name="history_status_draft">Szkic</string>
+    <string name="history_status_analyzed">Przeanalizowane</string>
+    <string name="history_status_reply">Odpowiedź gotowa</string>
+    <string name="history_status_advisor">Wymaga poradni</string>
+    <string name="history_urgency_green">Spokojnie</string>
+    <string name="history_urgency_yellow">Niedługo termin</string>
+    <string name="history_urgency_red">Pilne</string>
+    <string name="history_open">Otwórz pismo</string>
+</resources>

@@ -1,0 +1,41 @@
+config:
+  validation: true
+
+complexity:
+  LongMethod:
+    active: true
+    allowedLines: 80
+    ignoreAnnotated:
+      - Composable
+  LongParameterList:
+    active: true
+    ignoreDefaultParameters: true
+    ignoreAnnotated:
+      - Composable
+  TooManyFunctions:
+    active: false
+
+naming:
+  FunctionNaming:
+    ignoreAnnotated:
+      - Composable
+
+style:
+  MaxLineLength:
+    maxLineLength: 140
+  MagicNumber:
+    active: false
+  WildcardImport:
+    active: true
+  ReturnCount:
+    excludeGuardClauses: true
+
+exceptions:
+  TooGenericExceptionCaught:
+    active: false
+  SwallowedException:
+    active: true
+
+coroutines:
+  GlobalCoroutineUsage:
+    active: true

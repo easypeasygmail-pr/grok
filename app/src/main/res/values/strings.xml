@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Odpisz.de</string>
+    <string name="nav_letters">Pisma</string>
+    <string name="nav_scan">Skanuj</string>
+    <string name="nav_settings">Ustawienia</string>
+</resources>

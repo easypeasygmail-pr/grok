@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reply_title">Odpowiedź</string>
+    <string name="reply_lead">Wybierz scenariusz i opisz fakty po polsku. Niemiecki tekst to szablon. Ta faza nie tłumaczy faktów i nie dopisuje argumentu prawnego.</string>
+    <string name="reply_facts">Twoje fakty po polsku</string>
+    <string name="reply_generate">Złóż list</string>
+    <string name="reply_german">Wersja niemiecka</string>
+    <string name="reply_polish">Tłumaczenie zwrotne szablonu</string>
+    <string name="reply_share">Udostępnij PDF</string>
+    <string name="reply_scenario_frist">Przedłużenie terminu</string>
+    <string name="reply_scenario_rate">Raty albo odroczenie</string>
+    <string name="reply_scenario_widerspruch">Sprzeciw z zachowaniem terminu</string>
+    <string name="reply_scenario_erklaerung">Tylko wyjaśnienie faktów</string>
+    <string name="reply_scenario_daten">Zmiana danych</string>
+    <string name="reply_error_title">Nie udało się złożyć listu</string>
+    <string name="reply_retry">Spróbuj ponownie</string>
+    <string name="reply_blocked">Ta sprawa jest zablokowana. Idź do poradni.</string>
+    <string name="reply_tax_note">Przy piśmie podatkowym są tylko neutralne szablony. Bez odwołania merytorycznego.</string>
+</resources>

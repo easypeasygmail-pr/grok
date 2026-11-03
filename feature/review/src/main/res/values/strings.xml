@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="review_title">Sprawdź tekst</string>
+    <string name="review_lead">To jest tekst po zamaskowaniu. Analiza w tej fazie dzieje się na telefonie i używa przykładowych reguł. Na serwer nic nie wychodzi.</string>
+    <string name="review_masked">Tekst zamaskowany</string>
+    <string name="review_original">Oryginał zostaje tylko na tym telefonie</string>
+    <string name="review_show_original">Pokaż oryginał</string>
+    <string name="review_hide_original">Ukryj oryginał</string>
+    <string name="review_analyze">Analizuj zamaskowany tekst</string>
+    <string name="review_tokens">Ukryte fragmenty</string>
+    <string name="review_error_title">Nie udało się wczytać pisma</string>
+    <string name="review_retry">Spróbuj ponownie</string>
+    <string name="review_missing">Nie ma takiego pisma.</string>
+</resources>

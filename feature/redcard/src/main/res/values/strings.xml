@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="redcard_title">Idź do poradni</string>
+    <string name="redcard_lead">Tego pisma nie wolno załatwiać szablonem. Odpisz.de nie napisze odpowiedzi i nie wymyśli argumentu prawnego.</string>
+    <string name="redcard_why">Dlaczego</string>
+    <string name="redcard_court">Pismo z sądu albo pozew.</string>
+    <string name="redcard_enforcement">Egzekucja, Gerichtsvollzieher.</string>
+    <string name="redcard_payment">Nakaz zapłaty, Mahnbescheid.</string>
+    <string name="redcard_residence">Sprawa pobytowa.</string>
+    <string name="redcard_tax">Merytoryczne odwołanie podatkowe. Przy zwykłym piśmie z urzędu skarbowego zostają tylko neutralne szablony.</string>
+    <string name="redcard_where">Gdzie iść</string>
+    <string name="redcard_where_body">TODO: właściciel wpisze tu lokalną poradnię prawną albo punkt pomocy. Tego tekstu nie traktuj jako gotowej informacji prawnej.</string>
+    <string name="redcard_back">Wróć do pisma</string>
+    <string name="redcard_missing">Nie ma takiego pisma.</string>
+</resources>

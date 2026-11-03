@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://odpisz.de/schema/letter-analysis.json",
+  "title": "LetterAnalysis",
+  "description": "Offline contract for the future letter-analysis backend. The app stores no API key. confirmed is a local flag and is not part of this payload.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sender", "whatTheyWant", "amounts", "deadlines", "aktenzeichen", "urgency", "riskCategory"],
+  "properties": {
+    "sender": { "type": "string" },
+    "whatTheyWant": { "type": "string" },
+    "amounts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["value", "currency", "purpose", "iban", "dueDate"],
+        "properties": {
+          "value": { "type": "string", "pattern": "^-?[0-9]+(\\.[0-9]{1,2})?$" },
+          "currency": { "type": "string", "minLength": 3, "maxLength": 3 },
+          "purpose": { "type": "string" },
+          "iban": { "type": ["string", "null"] },
+          "dueDate": { "type": ["string", "null"], "format": "date" }
+        }
+      }
+    },
+    "deadlines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["date", "kind", "sourceQuote", "rule"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "kind": { "enum": ["RESPONSE", "PAYMENT", "HEARING", "OTHER"] },
+          "sourceQuote": { "type": "string", "minLength": 1 },
+          "rule": { "type": "string" }
+        }
+      }
+    },
+    "aktenzeichen": { "type": ["string", "null"] },
+    "urgency": { "enum": ["GREEN", "YELLOW", "RED"] },
+    "riskCategory": {
+      "enum": ["GENERAL", "COURT", "ENFORCEMENT", "PAYMENT_ORDER", "RESIDENCE", "TAX", "TAX_APPEAL"]
+    }
+  }
+}
